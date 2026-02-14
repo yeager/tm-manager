@@ -539,14 +539,15 @@ class TMManagerApp(Adw.Application):
     def _on_about(self, *_args):
         about = Adw.AboutDialog(
             application_name=_("Translation Memory Manager"),
-            application_icon="accessories-text-editor",
+            application_icon="tm-manager",
             version="0.1.0",
             developer_name="Daniel Nylander",
             developers=["Daniel Nylander <daniel@danielnylander.se>"],
             license_type=Gtk.License.GPL_3_0,
             website="https://github.com/yeager/tm-manager",
             issue_url="https://github.com/yeager/tm-manager/issues",
-            comments=_("Manage local Translation Memory files"),
+            comments=_("A localization tool by Daniel Nylander"),
+            translator_credits=_("Translate this app: https://app.transifex.com/linguaedit/tm-manager/"),
         )
         about.present(self.win)
 

@@ -2,7 +2,7 @@
 Name=Translation Memory Manager
 Comment=Manage local Translation Memory files
 Exec=tm-manager %f
-Icon=accessories-text-editor
+Icon=tm-manager
 Terminal=false
 Type=Application
 Categories=Development;Translation;GTK;

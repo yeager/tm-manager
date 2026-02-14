@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs><style>.c{fill:#C64600;}</style></defs>
+  <rect class="c" width="128" height="128" rx="16"/>
+  <ellipse cx="64" cy="48" rx="32" ry="14" fill="none" stroke="#fff" stroke-width="4"/>
+  <path d="M32 48 L32 80 C32 88 64 96 64 96 C64 96 96 88 96 80 L96 48" fill="none" stroke="#fff" stroke-width="4"/>
+  <line x1="32" y1="62" x2="96" y2="62" stroke="#fff" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="64" y="56" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff">TM</text>
+</svg>
