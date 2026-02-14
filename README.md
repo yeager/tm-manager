@@ -52,7 +52,7 @@ tm-manager /path/to/file.tmx
 
 ## Translation
 
-Translation is managed via [Transifex](https://www.transifex.com/yeager/tm-manager/).
+Translation is managed via [Transifex](https://app.transifex.com/danielnylander/tm-manager/).
 
 ## License
 
