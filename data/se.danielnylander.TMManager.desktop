@@ -1,6 +1,8 @@
 [Desktop Entry]
 Name=Translation Memory Manager
+Name[sv]=Översättningsminneshanterare
 Comment=Manage local Translation Memory files
+Comment[sv]=Hantera lokala översättningsminnesfiler
 Exec=tm-manager %f
 Icon=tm-manager
 Terminal=false
@@ -8,3 +10,4 @@ Type=Application
 Categories=Development;Translation;GTK;
 MimeType=application/x-tmx;
 Keywords=translation;memory;tmx;i18n;l10n;
+Keywords[sv]=översättning;minne;tmx;i18n;l10n;
