@@ -1,0 +1,257 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Daniel Nylander
+# This file is distributed under the same license as the tm-manager package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Daniel Nylander <po@danielnylander.se>, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tm-manager 0.1.0\n"
+"Report-Msgid-Bugs-To: daniel@danielnylander.se\n"
+"POT-Creation-Date: 2026-02-14 10:01+0100\n"
+"PO-Revision-Date: 2026-02-14 09:50+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/danielnylander/teams/304769/sv/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/tm_manager/main.py:34 src/tm_manager/main.py:49
+#: src/tm_manager/main.py:541
+msgid "Translation Memory Manager"
+msgstr "Hantera översättningsminne"
+
+#: src/tm_manager/main.py:50
+msgid "No file loaded"
+msgstr "Ingen fil inläst"
+
+#: src/tm_manager/main.py:57
+msgid "New TMX"
+msgstr "Ny TMX"
+
+#: src/tm_manager/main.py:58
+msgid "Open TMX…"
+msgstr "Öppna TMX…"
+
+#: src/tm_manager/main.py:59 src/tm_manager/main.py:245
+msgid "Save"
+msgstr "Spara"
+
+#: src/tm_manager/main.py:60
+msgid "Save As…"
+msgstr "Spara som..."
+
+#: src/tm_manager/main.py:63
+msgid "Import PO…"
+msgstr "Importera PO..."
+
+#: src/tm_manager/main.py:64
+msgid "Import XLIFF…"
+msgstr "Importera XLIFF…"
+
+#: src/tm_manager/main.py:65
+msgid "Import Qt TS…"
+msgstr "Importera Qt TS…"
+
+#: src/tm_manager/main.py:66
+msgid "Import"
+msgstr "Importera"
+
+#: src/tm_manager/main.py:69
+msgid "Export as PO…"
+msgstr "Exportera som PO…"
+
+#: src/tm_manager/main.py:70
+msgid "Export"
+msgstr "Exportera"
+
+#: src/tm_manager/main.py:73
+msgid "Merge TMX…"
+msgstr "Slå samman TMX…"
+
+#: src/tm_manager/main.py:77
+msgid "Statistics…"
+msgstr "Statistik…"
+
+#: src/tm_manager/main.py:81
+msgid "About"
+msgstr "Om"
+
+#: src/tm_manager/main.py:88
+msgid "Add Segment"
+msgstr "Lägg till segment"
+
+#: src/tm_manager/main.py:99
+msgid "Search translations…"
+msgstr "Sök efter översättningar..."
+
+#: src/tm_manager/main.py:107
+msgid "Fuzzy match threshold"
+msgstr "Tröskelvärde för luddig matchning"
+
+#: src/tm_manager/main.py:111 src/tm_manager/main.py:201
+msgid "All Languages"
+msgstr "Alla språk"
+
+#: src/tm_manager/main.py:112
+msgid "Filter by language"
+msgstr "Filtrera efter språk"
+
+#: src/tm_manager/main.py:122
+msgid "No segments. Open a TMX file or add segments."
+msgstr "Inga segment. Öppna en TMX-fil eller lägg till segment."
+
+#: src/tm_manager/main.py:128
+msgid "Ready"
+msgstr "Redo"
+
+#: src/tm_manager/main.py:154
+#, python-brace-format
+msgid "{shown} of {total} segments"
+msgstr "{shown} av {total} segment"
+
+#: src/tm_manager/main.py:156
+#, python-brace-format
+msgid "{total} segments"
+msgstr "{total} segment"
+
+#: src/tm_manager/main.py:237
+msgid "Edit Segment"
+msgstr "Redigera segment"
+
+#: src/tm_manager/main.py:249
+msgid "Delete"
+msgstr "Ta bort"
+
+#: src/tm_manager/main.py:255
+msgid "Translation"
+msgstr "Översättning"
+
+#: src/tm_manager/main.py:257
+msgid "Source"
+msgstr "Källa"
+
+#: src/tm_manager/main.py:261
+msgid "Target"
+msgstr "Mål"
+
+#: src/tm_manager/main.py:265
+msgid "Source Language"
+msgstr "Källspråk"
+
+#: src/tm_manager/main.py:269
+msgid "Target Language"
+msgstr "Målspråk"
+
+#: src/tm_manager/main.py:273
+msgid "Note"
+msgstr "Anteckning"
+
+#: src/tm_manager/main.py:277
+msgid "Project"
+msgstr "Projekt"
+
+#: src/tm_manager/main.py:323
+#, python-brace-format
+msgid "{total} segments loaded from {file}"
+msgstr "{total} segment inlästa från {file}"
+
+#: src/tm_manager/main.py:326
+msgid "Failed to load file"
+msgstr "Misslyckades med att läsa in filen"
+
+#: src/tm_manager/main.py:330 src/tm_manager/main.py:536
+msgid "OK"
+msgstr "OK"
+
+#: src/tm_manager/main.py:376
+msgid "New file"
+msgstr "Ny fil"
+
+#: src/tm_manager/main.py:383 src/tm_manager/main.py:411
+#: src/tm_manager/main.py:499
+msgid "TMX files"
+msgstr "TMX-filer"
+
+#: src/tm_manager/main.py:402
+msgid "Saved"
+msgstr "Sparades"
+
+#: src/tm_manager/main.py:404
+msgid "Save failed"
+msgstr "Sparning misslyckades"
+
+#: src/tm_manager/main.py:427
+#, python-brace-format
+msgid "Saved to {file}"
+msgstr "Sparades till {file}"
+
+#: src/tm_manager/main.py:432 src/tm_manager/main.py:477
+msgid "PO files"
+msgstr "PO-filer"
+
+#: src/tm_manager/main.py:435
+msgid "XLIFF files"
+msgstr "XLIFF-filer"
+
+#: src/tm_manager/main.py:438
+msgid "Qt TS files"
+msgstr "Qt TS-filer"
+
+#: src/tm_manager/main.py:468
+#, python-brace-format
+msgid "Imported {count} segments"
+msgstr "Importerade {count} segment"
+
+#: src/tm_manager/main.py:472
+msgid "Import failed"
+msgstr "Importen misslyckades"
+
+#: src/tm_manager/main.py:492
+#, python-brace-format
+msgid "Exported to {file}"
+msgstr "Exporterade till {file}"
+
+#: src/tm_manager/main.py:514
+#, python-brace-format
+msgid "Merged: {added} new segments added"
+msgstr "Slå samman: {added} nya segment lades till"
+
+#: src/tm_manager/main.py:518
+msgid "Merge failed"
+msgstr "Sammanslagning misslyckades"
+
+#: src/tm_manager/main.py:522 src/tm_manager/main.py:523
+#: src/tm_manager/main.py:531
+msgid "None"
+msgstr "Ingen"
+
+#: src/tm_manager/main.py:525
+#, python-brace-format
+msgid ""
+"Total segments: {total}\n"
+"Languages: {langs}\n"
+"Language pairs: {pairs}\n"
+"Projects: {projects}"
+msgstr ""
+"Totalt antal segment: {total}\n"
+"Språk: {langs}\n"
+"Språkpar: {pairs}\n"
+"Projekt: {projects}"
+
+#: src/tm_manager/main.py:535
+msgid "Statistics"
+msgstr "Statistik"
+
+#: src/tm_manager/main.py:549
+msgid "Manage local Translation Memory files"
+msgstr "Hantera lokala översättningsminnesfiler"
+
+#: desktop file
+msgid "translation;memory;tmx;i18n;l10n;"
+msgstr "översättning;minne;tmx;i18n;l10n;"
