@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tm-manager"
+version = "0.1.0"
+description = "Manage local Translation Memory files (TMX)"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.10"
+authors = [
+    {name = "Daniel Nylander", email = "daniel@danielnylander.se"},
+]
+keywords = ["translation", "tmx", "translation-memory", "i18n", "l10n", "gtk"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: X11 Applications :: GTK",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "PyGObject>=3.42",
+]
+
+[project.urls]
+Homepage = "https://github.com/yeager/tm-manager"
+Repository = "https://github.com/yeager/tm-manager"
+Issues = "https://github.com/yeager/tm-manager/issues"
+
+[project.gui-scripts]
+tm-manager = "tm_manager.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
