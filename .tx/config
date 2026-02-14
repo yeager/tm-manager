@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[o:linguaedit:p:tm-manager:r:tm-manager-pot]
+[o:danielnylander:p:tm-manager:r:tm-manager-pot]
 file_filter = po/<lang>.po
 source_file = po/tm-manager.pot
 source_lang = en

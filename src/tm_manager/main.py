@@ -547,7 +547,7 @@ class TMManagerApp(Adw.Application):
             website="https://github.com/yeager/tm-manager",
             issue_url="https://github.com/yeager/tm-manager/issues",
             comments=_("A localization tool by Daniel Nylander"),
-            translator_credits=_("Translate this app: https://app.transifex.com/linguaedit/tm-manager/"),
+            translator_credits=_("Translate this app: https://app.transifex.com/danielnylander/tm-manager/"),
         )
         about.present(self.win)
 
