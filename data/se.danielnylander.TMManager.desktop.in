@@ -1,0 +1,10 @@
+[Desktop Entry]
+_Name=Translation Memory Manager
+_Comment=Manage local Translation Memory files
+Exec=tm-manager %f
+Icon=tm-manager
+Terminal=false
+Type=Application
+Categories=Development;Translation;GTK;
+MimeType=application/x-tmx;
+_Keywords=translation;memory;tmx;i18n;l10n;

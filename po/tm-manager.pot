@@ -243,3 +243,7 @@ msgstr ""
 #: src/tm_manager/main.py:549
 msgid "Manage local Translation Memory files"
 msgstr ""
+
+#: desktop file
+msgid "translation;memory;tmx;i18n;l10n;"
+msgstr ""
