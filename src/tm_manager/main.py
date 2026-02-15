@@ -2,6 +2,7 @@
 
 import gettext
 import locale
+import os
 import sys
 from pathlib import Path
 
@@ -14,12 +15,14 @@ from .tmx import (TMXFile, TranslationUnit, import_po, import_xliff,
                    import_ts, export_po)
 
 # i18n
-LOCALE_DIR = Path(__file__).parent.parent.parent / "po"
+LOCALE_DIR = str(Path(__file__).parent.parent.parent / "po")
+if not os.path.isdir(LOCALE_DIR):
+    LOCALE_DIR = "/usr/share/locale"
 try:
     locale.setlocale(locale.LC_ALL, "")
 except locale.Error:
     pass
-gettext.bindtextdomain("tm-manager", str(LOCALE_DIR))
+gettext.bindtextdomain("tm-manager", LOCALE_DIR)
 gettext.textdomain("tm-manager")
 _ = gettext.gettext
 
