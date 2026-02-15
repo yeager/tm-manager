@@ -50,10 +50,26 @@ Or open a TMX file directly:
 tm-manager /path/to/file.tmx
 ```
 
-## Translation
+## 🌍 Contributing Translations
 
-Translation is managed via [Transifex](https://app.transifex.com/danielnylander/tm-manager/).
+Help translate this app into your language! All translations are managed via Transifex.
 
+**→ [Translate on Transifex](https://app.transifex.com/danielnylander/tm-manager/)**
+
+### How to contribute:
+1. Visit the [Transifex project page](https://app.transifex.com/danielnylander/tm-manager/)
+2. Create a free account (or log in)
+3. Select your language and start translating
+
+### Currently supported languages:
+Arabic, Czech, Danish, German, Spanish, Finnish, French, Italian, Japanese, Korean, Norwegian Bokmål, Dutch, Polish, Brazilian Portuguese, Russian, Swedish, Ukrainian, Chinese (Simplified)
+
+### Notes:
+- Please do **not** submit pull requests with .po file changes — they are synced automatically from Transifex
+- Source strings are pushed to Transifex daily via GitHub Actions
+- Translations are pulled back and included in releases
+
+New language? Open an [issue](https://github.com/yeager/tm-manager/issues) and we'll add it!
 ## License
 
 GPL-3.0 — see [LICENSE](LICENSE) for details.
