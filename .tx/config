@@ -6,3 +6,9 @@ file_filter = po/<lang>.po
 source_file = po/tm-manager.pot
 source_lang = en
 type = PO
+
+[o:danielnylander:p:tm-manager:r:tm-manager-man]
+file_filter  = po/man/<lang>.po
+source_file  = po/man/tm-manager.1.pot
+source_lang  = en
+type         = PO
