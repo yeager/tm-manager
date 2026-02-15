@@ -1,8 +1,8 @@
 # Translation Memory Manager
 
-A GTK4/Adwaita application for managing local Translation Memory files (.tmx).
+A GTK4/Adwaita application for managing TMX translation memory files.
 
-![License](https://img.shields.io/github/license/yeager/tm-manager)
+![Screenshot](data/screenshots/screenshot-01.png)
 
 ## Features
 
@@ -14,40 +14,31 @@ A GTK4/Adwaita application for managing local Translation Memory files (.tmx).
 - Filter by language, project, date
 - Edit individual segments
 - Merge two TMX files
-- Modern Adwaita UI with search and filtering
 
 ## Installation
 
-### From .deb package
+### Debian/Ubuntu
 
 ```bash
-sudo dpkg -i tm-manager_0.1.0_all.deb
-sudo apt-get install -f
+# Add repository
+curl -fsSL https://yeager.github.io/debian-repo/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/yeager-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/yeager-archive-keyring.gpg] https://yeager.github.io/debian-repo stable main" | sudo tee /etc/apt/sources.list.d/yeager.list
+sudo apt update
+sudo apt install tm-manager
+```
+
+### Fedora/RHEL
+
+```bash
+sudo dnf config-manager --add-repo https://yeager.github.io/rpm-repo/yeager.repo
+sudo dnf install tm-manager
 ```
 
 ### From source
 
 ```bash
 pip install .
-```
-
-## Dependencies
-
-- Python 3.10+
-- GTK 4
-- libadwaita
-- PyGObject
-
-## Usage
-
-```bash
 tm-manager
-```
-
-Or open a TMX file directly:
-
-```bash
-tm-manager /path/to/file.tmx
 ```
 
 ## 🌍 Contributing Translations
@@ -70,10 +61,7 @@ Arabic, Czech, Danish, German, Spanish, Finnish, French, Italian, Japanese, Kore
 - Translations are pulled back and included in releases
 
 New language? Open an [issue](https://github.com/yeager/tm-manager/issues) and we'll add it!
+
 ## License
 
-GPL-3.0 — see [LICENSE](LICENSE) for details.
-
-## Author
-
-Daniel Nylander <daniel@danielnylander.se>
+GPL-3.0-or-later — Daniel Nylander <daniel@danielnylander.se>
