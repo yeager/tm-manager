@@ -543,14 +543,15 @@ class TMManagerApp(Adw.Application):
         about = Adw.AboutDialog(
             application_name=_("Translation Memory Manager"),
             application_icon="tm-manager",
-            version="0.1.0",
+            version="0.2.2",
             developer_name="Daniel Nylander",
             developers=["Daniel Nylander <daniel@danielnylander.se>"],
+            copyright="© 2026 Daniel Nylander",
             license_type=Gtk.License.GPL_3_0,
             website="https://github.com/yeager/tm-manager",
             issue_url="https://github.com/yeager/tm-manager/issues",
-            comments=_("A localization tool by Daniel Nylander"),
-            translator_credits=_("Translate this app: https://app.transifex.com/danielnylander/tm-manager/"),
+            comments=_("Manage and query translation memory files in TMX format"),
+            translator_credits="Daniel Nylander <daniel@danielnylander.se>",
         )
         about.present(self.win)
 
