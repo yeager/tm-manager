@@ -550,6 +550,7 @@ class TMManagerApp(Adw.Application):
             license_type=Gtk.License.GPL_3_0,
             website="https://github.com/yeager/tm-manager",
             issue_url="https://github.com/yeager/tm-manager/issues",
+            translate_url="https://app.transifex.com/danielnylander/tm-manager/",
             comments=_("Manage and query translation memory files in TMX format"),
             translator_credits="Daniel Nylander <daniel@danielnylander.se>",
         )
