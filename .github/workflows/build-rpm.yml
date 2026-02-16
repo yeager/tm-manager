@@ -108,3 +108,4 @@ SPEC
           gh release upload "v${VERSION}" \
             ~/rpmbuild/RPMS/noarch/tm-manager-${VERSION}-1.noarch.rpm \
             --clobber
+# Trigger re-index
