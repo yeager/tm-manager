@@ -243,3 +243,11 @@ msgstr ""
 #: src/tm_manager/main.py:554
 msgid "Manage and query translation memory files in TMX format"
 msgstr ""
+
+#: tm-manager/data/se.danielnylander.TMManager.desktop.in
+msgid "Manage local Translation Memory files"
+msgstr ""
+
+#: tm-manager/data/se.danielnylander.TMManager.desktop.in
+msgid "translation;memory;tmx;i18n;l10n;"
+msgstr ""

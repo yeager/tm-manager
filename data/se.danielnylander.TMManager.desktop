@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Translation Memory Manager
+Name[sv]=Hantera översättningsminne
 Comment=Manage local Translation Memory files
 Exec=tm-manager %f
 Icon=tm-manager
