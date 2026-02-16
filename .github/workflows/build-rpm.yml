@@ -1,0 +1,101 @@
+name: Build RPM
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-rpm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install RPM tools
+        run: sudo apt-get update && sudo apt-get install -y rpm
+
+      - name: Get version
+        id: version
+        run: echo "version=$(grep -oP '__version__ = "\K[^"]+' src/tm_manager/__init__.py)" >> $GITHUB_OUTPUT
+
+      - name: Setup RPM build
+        run: |
+          mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
+          VERSION=${{ steps.version.outputs.version }}
+          DIR=tm-manager-$VERSION
+          mkdir -p $DIR/src/tm_manager
+          mkdir -p $DIR/data/icons $DIR/data/man
+          cp src/tm_manager/*.py $DIR/src/tm_manager/
+          cp data/se.danielnylander.TMManager.desktop $DIR/data/
+          cp data/icons/se.danielnylander.tm-manager.svg $DIR/data/icons/
+          cp data/man/tm-manager.1 $DIR/data/man/
+          cp LICENSE $DIR/
+          test -f po/sv/LC_MESSAGES/tm-manager.mo && { mkdir -p $DIR/po/sv/LC_MESSAGES; cp po/sv/LC_MESSAGES/tm-manager.mo $DIR/po/sv/LC_MESSAGES/; } || true
+          tar czf ~/rpmbuild/SOURCES/$DIR.tar.gz $DIR
+
+      - name: Create spec file
+        run: |
+          cat > ~/rpmbuild/SPECS/tm-manager.spec << 'SPEC'
+          Name:           tm-manager
+          Version:        VERSION_PLACEHOLDER
+          Release:        1
+          Summary:        Translation Memory manager
+          License:        GPL-3.0-or-later
+          URL:            https://github.com/yeager/tm-manager
+          Source0:        %{name}-%{version}.tar.gz
+          BuildArch:      noarch
+          Requires:       python3 >= 3.9
+          Requires:       python3-gobject
+          Requires:       gtk4
+          Requires:       libadwaita
+
+          %description
+          A GTK4/Libadwaita application for managing TMX translation memory files.
+
+          %prep
+          %setup -q
+
+          %install
+          mkdir -p %{buildroot}%{_datadir}/tm-manager/tm_manager
+          cp src/tm_manager/*.py %{buildroot}%{_datadir}/tm-manager/tm_manager/
+          mkdir -p %{buildroot}%{_bindir}
+          cat > %{buildroot}%{_bindir}/tm-manager << 'WRAPPER'
+          #!/bin/bash
+          exec python3 -c "import sys; sys.path.insert(0, '/usr/share/tm-manager'); from tm_manager.main import main; main()" "$@"
+          WRAPPER
+          chmod 755 %{buildroot}%{_bindir}/tm-manager
+          install -Dm644 data/se.danielnylander.TMManager.desktop %{buildroot}%{_datadir}/applications/se.danielnylander.TMManager.desktop
+          install -Dm644 data/icons/se.danielnylander.tm-manager.svg %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/se.danielnylander.tm-manager.svg
+          install -Dm644 data/man/tm-manager.1 %{buildroot}%{_mandir}/man1/tm-manager.1
+          test -f po/sv/LC_MESSAGES/tm-manager.mo && install -Dm644 po/sv/LC_MESSAGES/tm-manager.mo %{buildroot}%{_datadir}/locale/sv/LC_MESSAGES/tm-manager.mo || true
+
+          %files
+          %license LICENSE
+          %{_bindir}/tm-manager
+          %{_datadir}/tm-manager/
+          %{_datadir}/applications/se.danielnylander.TMManager.desktop
+          %{_datadir}/icons/hicolor/scalable/apps/se.danielnylander.tm-manager.svg
+          %{_mandir}/man1/tm-manager.1*
+          %{_datadir}/locale/sv/LC_MESSAGES/tm-manager.mo
+
+          %changelog
+          * $(date "+%a %b %d %Y") Daniel Nylander <daniel@danielnylander.se> - VERSION_PLACEHOLDER-1
+          - RPM package
+          SPEC
+          sed -i "s/VERSION_PLACEHOLDER/${{ steps.version.outputs.version }}/g" ~/rpmbuild/SPECS/tm-manager.spec
+
+      - name: Build RPM
+        run: rpmbuild -ba ~/rpmbuild/SPECS/tm-manager.spec
+
+      - name: Upload RPM to release
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION=${{ steps.version.outputs.version }}
+          gh release upload "v$VERSION" \
+            ~/rpmbuild/RPMS/noarch/tm-manager-${VERSION}-1.noarch.rpm \
+            --clobber
