@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![Ubuntu L10n](screenshots/main.png)
+![TM Manager](screenshots/main.png)
 
 A GTK4/Adwaita application for managing TMX translation memory files.
 
