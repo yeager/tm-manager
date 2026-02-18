@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-16 17:16+0100\n"
-"PO-Revision-Date: 2026-02-14 09:50+0000\n"
+"PO-Revision-Date: 2026-02-17 17:16+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/danielnylander/teams/304769/sv/)\n"
 "MIME-Version: 1.0\n"
@@ -84,7 +84,7 @@ msgstr "Om"
 
 #: src/tm_manager/main.py:108
 msgid "Export data"
-msgstr ""
+msgstr "Exportera data"
 
 #: src/tm_manager/main.py:113
 msgid "Add Segment"
@@ -126,15 +126,15 @@ msgstr "{total} segment"
 
 #: src/tm_manager/main.py:231
 msgid "Export Data"
-msgstr ""
+msgstr "Exportera data"
 
 #: src/tm_manager/main.py:232
 msgid "Choose export format:"
-msgstr ""
+msgstr "Välj exportformat:"
 
 #: src/tm_manager/main.py:233
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
 #: src/tm_manager/main.py:301
 msgid "Edit Segment"
@@ -231,12 +231,12 @@ msgstr "Importen misslyckades"
 #: src/tm_manager/main.py:597
 #, python-brace-format
 msgid "Exported to {file}"
-msgstr "Exporterade till {file}"
+msgstr "Exporterades till {file}"
 
 #: src/tm_manager/main.py:619
 #, python-brace-format
 msgid "Merged: {added} new segments added"
-msgstr "Slå samman: {added} nya segment lades till"
+msgstr "Sammanslagning: {added} nya segment lades till"
 
 #: src/tm_manager/main.py:623
 msgid "Merge failed"
@@ -245,7 +245,7 @@ msgstr "Sammanslagning misslyckades"
 #: src/tm_manager/main.py:627 src/tm_manager/main.py:628
 #: src/tm_manager/main.py:636
 msgid "None"
-msgstr "Ingen"
+msgstr "Inget"
 
 #: src/tm_manager/main.py:630
 #, python-brace-format
@@ -255,7 +255,7 @@ msgid ""
 "Language pairs: {pairs}\n"
 "Projects: {projects}"
 msgstr ""
-"Totalt antal segment: {total}\n"
+"Total antal segment: {total}\n"
 "Språk: {langs}\n"
 "Språkpar: {pairs}\n"
 "Projekt: {projects}"
