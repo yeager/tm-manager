@@ -1,6 +1,7 @@
 """Translation Memory Manager - Main application."""
 
 import csv
+from datetime import datetime as _dt_now
 import gettext
 import json
 import locale
@@ -14,7 +15,6 @@ gi.require_version("Adw", "1")
 from gi.repository import Adw, Gio, GLib, Gtk  # noqa: E402
 
 from .tmx import (TMXFile, TranslationUnit, import_po, import_xliff,
-from datetime import datetime as _dt_now
                    import_ts, export_po)
 
 # i18n
