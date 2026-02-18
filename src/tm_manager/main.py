@@ -654,7 +654,7 @@ class TMManagerApp(Adw.Application):
             issue_url="https://github.com/yeager/tm-manager/issues",
             translate_url="https://app.transifex.com/danielnylander/tm-manager/",
             comments=_("Manage and query translation memory files in TMX format"),
-            translator_credits="Daniel Nylander <daniel@danielnylander.se>",
+            translator_credits=_("Translate this app: https://www.transifex.com/danielnylander/tm-manager/"),
         )
         about.present(self.win)
 
