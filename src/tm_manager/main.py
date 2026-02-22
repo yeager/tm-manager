@@ -30,8 +30,6 @@ gettext.bindtextdomain("tm-manager", LOCALE_DIR)
 gettext.textdomain("tm-manager")
 _ = gettext.gettext
 
-
-
 def _wlc_settings_path():
     import os
     xdg = os.environ.get("XDG_CONFIG_HOME", os.path.expanduser("~/.config"))
@@ -263,7 +261,6 @@ class TMManagerWindow(Adw.ApplicationWindow):
         if not self._wlc_settings.get("welcome_shown"):
             self._show_welcome(self.props.active_window or self)
 
-
     def _on_export_format_chosen(self, dialog, response):
         if response not in ("csv", "json"):
             return
@@ -421,8 +418,6 @@ class TMManagerWindow(Adw.ApplicationWindow):
         dialog.add_response("ok", _("OK"))
         dialog.present(self)
 
-
-
     def _on_theme_toggle(self, _btn):
         sm = Adw.StyleManager.get_default()
         if sm.get_color_scheme() == Adw.ColorScheme.FORCE_DARK:
@@ -434,7 +429,6 @@ class TMManagerWindow(Adw.ApplicationWindow):
 
     def _update_status_bar(self):
         self._status_bar.set_text("Last updated: " + _dt_now.now().strftime("%Y-%m-%d %H:%M"))
-
 
 class TMManagerApp(Adw.Application):
     """Main application class."""
@@ -679,17 +673,16 @@ class TMManagerApp(Adw.Application):
             license_type=Gtk.License.GPL_3_0,
             website="https://github.com/yeager/tm-manager",
             issue_url="https://github.com/yeager/tm-manager/issues",
-            translate_url="https://app.transifex.com/danielnylander/tm-manager/",
             comments=_("Manage and query translation memory files in TMX format"),
             translator_credits=_("Translate this app: https://www.transifex.com/danielnylander/tm-manager/"),
         )
-        about.present(self.win)
+        about.add_link(_("Help translate"), "https://app.transifex.com/danielnylander/tm-manager/")
 
+        about.present(self.win)
 
 def main():
     app = TMManagerApp()
     return app.run(sys.argv)
-
 
 if __name__ == "__main__":
     sys.exit(main())
@@ -723,8 +716,6 @@ if __name__ == "__main__":
         _save_wlc_settings(self._wlc_settings)
         dialog.close()
 
-
-
 # --- Session restore ---
 import json as _json
 import os as _os
@@ -751,7 +742,6 @@ def _restore_session(window, app_name):
     except (FileNotFoundError, _json.JSONDecodeError, OSError):
         pass
 
-
 # --- Fullscreen toggle (F11) ---
 def _setup_fullscreen(window, app):
     """Add F11 fullscreen toggle."""
@@ -763,7 +753,6 @@ def _setup_fullscreen(window, app):
         ))
         app.add_action(action)
         app.set_accels_for_action('app.toggle-fullscreen', ['F11'])
-
 
 # --- Plugin system ---
 import importlib.util
