@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the tm-manager package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: tm-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-22 06:25+0100\n"
+"POT-Creation-Date: 2026-02-22 17:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,233 +17,233 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/tm_manager/main.py:61 src/tm_manager/main.py:83
-#: src/tm_manager/main.py:672
+#: src/tm_manager/main.py:62 src/tm_manager/main.py:84
+#: src/tm_manager/main.py:673
 msgid "Translation Memory Manager"
 msgstr ""
 
-#: src/tm_manager/main.py:84
+#: src/tm_manager/main.py:85
 msgid "No file loaded"
 msgstr ""
 
-#: src/tm_manager/main.py:91
+#: src/tm_manager/main.py:92
 msgid "New TMX"
 msgstr ""
 
-#: src/tm_manager/main.py:92
+#: src/tm_manager/main.py:93
 msgid "Open TMX…"
 msgstr ""
 
-#: src/tm_manager/main.py:93 src/tm_manager/main.py:335
+#: src/tm_manager/main.py:94 src/tm_manager/main.py:336
 msgid "Save"
 msgstr ""
 
-#: src/tm_manager/main.py:94
+#: src/tm_manager/main.py:95
 msgid "Save As…"
 msgstr ""
 
-#: src/tm_manager/main.py:97
+#: src/tm_manager/main.py:98
 msgid "Import PO…"
 msgstr ""
 
-#: src/tm_manager/main.py:98
+#: src/tm_manager/main.py:99
 msgid "Import XLIFF…"
 msgstr ""
 
-#: src/tm_manager/main.py:99
+#: src/tm_manager/main.py:100
 msgid "Import Qt TS…"
 msgstr ""
 
-#: src/tm_manager/main.py:100
+#: src/tm_manager/main.py:101
 msgid "Import"
 msgstr ""
 
-#: src/tm_manager/main.py:103
+#: src/tm_manager/main.py:104
 msgid "Export as PO…"
 msgstr ""
 
-#: src/tm_manager/main.py:104
+#: src/tm_manager/main.py:105
 msgid "Export"
 msgstr ""
 
-#: src/tm_manager/main.py:107
+#: src/tm_manager/main.py:108
 msgid "Merge TMX…"
 msgstr ""
 
-#: src/tm_manager/main.py:111
+#: src/tm_manager/main.py:112
 msgid "Statistics…"
 msgstr ""
 
-#: src/tm_manager/main.py:115
+#: src/tm_manager/main.py:116
 msgid "About"
 msgstr ""
 
-#: src/tm_manager/main.py:129
+#: src/tm_manager/main.py:130
 msgid "Export data"
 msgstr ""
 
-#: src/tm_manager/main.py:134
+#: src/tm_manager/main.py:135
 msgid "Add Segment"
 msgstr ""
 
-#: src/tm_manager/main.py:145
+#: src/tm_manager/main.py:146
 msgid "Search translations…"
 msgstr ""
 
-#: src/tm_manager/main.py:153
+#: src/tm_manager/main.py:154
 msgid "Fuzzy match threshold"
 msgstr ""
 
-#: src/tm_manager/main.py:157 src/tm_manager/main.py:247
+#: src/tm_manager/main.py:158 src/tm_manager/main.py:248
 msgid "All Languages"
 msgstr ""
 
-#: src/tm_manager/main.py:158
+#: src/tm_manager/main.py:159
 msgid "Filter by language"
 msgstr ""
 
-#: src/tm_manager/main.py:168
+#: src/tm_manager/main.py:169
 msgid "No segments. Open a TMX file or add segments."
 msgstr ""
 
-#: src/tm_manager/main.py:174
+#: src/tm_manager/main.py:175
 msgid "Ready"
 msgstr ""
 
-#: src/tm_manager/main.py:200
+#: src/tm_manager/main.py:201
 #, python-brace-format
 msgid "{shown} of {total} segments"
 msgstr ""
 
-#: src/tm_manager/main.py:202
+#: src/tm_manager/main.py:203
 #, python-brace-format
 msgid "{total} segments"
 msgstr ""
 
-#: src/tm_manager/main.py:252
+#: src/tm_manager/main.py:253
 msgid "Export Data"
 msgstr ""
 
-#: src/tm_manager/main.py:253
+#: src/tm_manager/main.py:254
 msgid "Choose export format:"
 msgstr ""
 
-#: src/tm_manager/main.py:254
+#: src/tm_manager/main.py:255
 msgid "Cancel"
 msgstr ""
 
-#: src/tm_manager/main.py:327
+#: src/tm_manager/main.py:328
 msgid "Edit Segment"
 msgstr ""
 
-#: src/tm_manager/main.py:339
+#: src/tm_manager/main.py:340
 msgid "Delete"
 msgstr ""
 
-#: src/tm_manager/main.py:345
+#: src/tm_manager/main.py:346
 msgid "Translation"
 msgstr ""
 
-#: src/tm_manager/main.py:347
+#: src/tm_manager/main.py:348
 msgid "Source"
 msgstr ""
 
-#: src/tm_manager/main.py:351
+#: src/tm_manager/main.py:352
 msgid "Target"
 msgstr ""
 
-#: src/tm_manager/main.py:355
+#: src/tm_manager/main.py:356
 msgid "Source Language"
 msgstr ""
 
-#: src/tm_manager/main.py:359
+#: src/tm_manager/main.py:360
 msgid "Target Language"
 msgstr ""
 
-#: src/tm_manager/main.py:363
+#: src/tm_manager/main.py:364
 msgid "Note"
 msgstr ""
 
-#: src/tm_manager/main.py:367
+#: src/tm_manager/main.py:368
 msgid "Project"
 msgstr ""
 
-#: src/tm_manager/main.py:413
+#: src/tm_manager/main.py:414
 #, python-brace-format
 msgid "{total} segments loaded from {file}"
 msgstr ""
 
-#: src/tm_manager/main.py:416
+#: src/tm_manager/main.py:417
 msgid "Failed to load file"
 msgstr ""
 
-#: src/tm_manager/main.py:420 src/tm_manager/main.py:667
+#: src/tm_manager/main.py:421 src/tm_manager/main.py:668
 msgid "OK"
 msgstr ""
 
-#: src/tm_manager/main.py:507
+#: src/tm_manager/main.py:508
 msgid "New file"
 msgstr ""
 
-#: src/tm_manager/main.py:514 src/tm_manager/main.py:542
-#: src/tm_manager/main.py:630
+#: src/tm_manager/main.py:515 src/tm_manager/main.py:543
+#: src/tm_manager/main.py:631
 msgid "TMX files"
 msgstr ""
 
-#: src/tm_manager/main.py:533
+#: src/tm_manager/main.py:534
 msgid "Saved"
 msgstr ""
 
-#: src/tm_manager/main.py:535
+#: src/tm_manager/main.py:536
 msgid "Save failed"
 msgstr ""
 
-#: src/tm_manager/main.py:558
+#: src/tm_manager/main.py:559
 #, python-brace-format
 msgid "Saved to {file}"
 msgstr ""
 
-#: src/tm_manager/main.py:563 src/tm_manager/main.py:608
+#: src/tm_manager/main.py:564 src/tm_manager/main.py:609
 msgid "PO files"
 msgstr ""
 
-#: src/tm_manager/main.py:566
+#: src/tm_manager/main.py:567
 msgid "XLIFF files"
 msgstr ""
 
-#: src/tm_manager/main.py:569
+#: src/tm_manager/main.py:570
 msgid "Qt TS files"
 msgstr ""
 
-#: src/tm_manager/main.py:599
+#: src/tm_manager/main.py:600
 #, python-brace-format
 msgid "Imported {count} segments"
 msgstr ""
 
-#: src/tm_manager/main.py:603
+#: src/tm_manager/main.py:604
 msgid "Import failed"
 msgstr ""
 
-#: src/tm_manager/main.py:623
+#: src/tm_manager/main.py:624
 #, python-brace-format
 msgid "Exported to {file}"
 msgstr ""
 
-#: src/tm_manager/main.py:645
+#: src/tm_manager/main.py:646
 #, python-brace-format
 msgid "Merged: {added} new segments added"
 msgstr ""
 
-#: src/tm_manager/main.py:649
+#: src/tm_manager/main.py:650
 msgid "Merge failed"
 msgstr ""
 
-#: src/tm_manager/main.py:653 src/tm_manager/main.py:654
-#: src/tm_manager/main.py:662
+#: src/tm_manager/main.py:654 src/tm_manager/main.py:655
+#: src/tm_manager/main.py:663
 msgid "None"
 msgstr ""
 
-#: src/tm_manager/main.py:656
+#: src/tm_manager/main.py:657
 #, python-brace-format
 msgid ""
 "Total segments: {total}\n"
@@ -252,28 +252,28 @@ msgid ""
 "Projects: {projects}"
 msgstr ""
 
-#: src/tm_manager/main.py:666
+#: src/tm_manager/main.py:667
 msgid "Statistics"
 msgstr ""
 
-#: src/tm_manager/main.py:682
+#: src/tm_manager/main.py:683
 msgid "Manage and query translation memory files in TMX format"
 msgstr ""
 
-#: src/tm_manager/main.py:683
+#: src/tm_manager/main.py:684
 msgid ""
 "Translate this app: https://www.transifex.com/danielnylander/tm-manager/"
 msgstr ""
 
-#: src/tm_manager/main.py:698
+#: src/tm_manager/main.py:699
 msgid "Welcome"
 msgstr ""
 
-#: src/tm_manager/main.py:703
+#: src/tm_manager/main.py:704
 msgid "Welcome to TM Manager"
 msgstr ""
 
-#: src/tm_manager/main.py:704
+#: src/tm_manager/main.py:705
 msgid ""
 "Manage translation memory databases.\n"
 "\n"
@@ -282,6 +282,6 @@ msgid ""
 "✓ Merge TM databases"
 msgstr ""
 
-#: src/tm_manager/main.py:705
+#: src/tm_manager/main.py:706
 msgid "Get Started"
 msgstr ""
