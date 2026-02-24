@@ -6,6 +6,7 @@ Exec=tm-manager %f
 Icon=se.danielnylander.tm-manager
 Terminal=false
 Type=Application
+StartupWMClass=se.danielnylander.TMManager
 Categories=Development;Translation;GTK;
 MimeType=application/x-tmx;
 Keywords=translation;memory;tmx;i18n;l10n;

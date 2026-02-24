@@ -436,6 +436,7 @@ class TMManagerApp(Adw.Application):
     def __init__(self):
         super().__init__(
             application_id="se.danielnylander.TMManager",
+        GLib.set_application_name(_("Translation Memory Manager"))
             flags=Gio.ApplicationFlags.HANDLES_OPEN,
         )
         self.win = None
